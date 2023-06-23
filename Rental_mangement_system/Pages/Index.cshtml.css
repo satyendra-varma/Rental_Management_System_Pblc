@@ -1,0 +1,18 @@
+﻿body {
+}
+input[type=number]{
+    width:10%;
+}
+label{
+    margin-left: 10px;
+}
+form span {
+    margin-left: 10px;
+    font-size:20px;
+}
+.filters *{
+    margin-left:10px;
+}
+.filters {
+    margin:auto
+}

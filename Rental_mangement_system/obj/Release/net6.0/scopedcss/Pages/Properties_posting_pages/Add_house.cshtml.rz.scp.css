@@ -1,0 +1,22 @@
+body[b-c7vefkhiwd] {
+}
+
+div.Add_house-body div.top-bar[b-c7vefkhiwd]{
+    display:block;
+    padding:2% 5%;
+    box-shadow:0.5px 0.5px 10px black;
+
+}
+div.Add_house-body div.top-bar h1[b-c7vefkhiwd], a[b-c7vefkhiwd] {
+    display: inline-block;
+}
+div.Add_house-body div.top-bar a[b-c7vefkhiwd]{
+    float: right;
+    margin-top: 1%;
+}
+h3[b-c7vefkhiwd]{
+    margin-top:10px;
+}
+div.Add_house-body div.top-bar[b-c7vefkhiwd]{
+    background-color:antiquewhite;
+}

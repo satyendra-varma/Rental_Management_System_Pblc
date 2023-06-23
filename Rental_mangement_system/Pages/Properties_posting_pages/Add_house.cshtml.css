@@ -1,0 +1,22 @@
+﻿body {
+}
+
+div.Add_house-body div.top-bar{
+    display:block;
+    padding:2% 5%;
+    box-shadow:0.5px 0.5px 10px black;
+
+}
+div.Add_house-body div.top-bar h1, a {
+    display: inline-block;
+}
+div.Add_house-body div.top-bar a{
+    float: right;
+    margin-top: 1%;
+}
+h3{
+    margin-top:10px;
+}
+div.Add_house-body div.top-bar{
+    background-color:antiquewhite;
+}

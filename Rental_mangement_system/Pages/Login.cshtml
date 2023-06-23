@@ -1,0 +1,36 @@
+﻿@page
+@model Rental_mangement_system.Pages.LoginModel
+@{
+}
+<div class="Login-body">
+    <div class="text-center">
+        <br>
+        <h1>Login to your account</h1><br>
+        <form action="" method="post" target="_self">
+            <label for="email">Email Id : </label><br>
+            <input type="text" class="form-control" name="email"><br><br>
+            <label for="password">Password : </label><br>
+            <input type="password" class="form-control" name="password"><br><br>
+
+            @if (Model.error_message.Length > 0)
+            {
+                <div class="container text-center alert alert-warning alert-dismissible fade show" role="alert">
+                    <h4><b>@Model.error_message</b></h4>
+                    <button type="button" class="btn btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+                </div>
+            }
+            @if (Model.success_message.Length > 0)
+            {
+                <div class="container text-center alert alert-success alert-dismissible fade show" role="alert">
+                    <h4><b>@Model.success_message</b></h4>
+                    <button type="button" class="btn btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+                </div>
+            }
+
+            <input type="submit" value="Submit">
+        </form>
+        <br>
+        <a asp-area="" asp-page="/Signup">Create new account</a><br><br>
+    </div>
+    <br>
+</div>

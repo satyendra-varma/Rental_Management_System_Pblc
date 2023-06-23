@@ -1,0 +1,104 @@
+﻿@page
+@model IndexModel
+@{
+    ViewData["Title"] = "Home page";
+}
+<script>
+    function showFilters() {
+        var x = document.getElementById("filters");
+        if (x.style.display == "none") {
+            x.style.display = "block";
+            document.getElementById("filter-control-button").value = "Hide Filters";
+        } 
+        else{
+            x.style.display = "none";
+            document.getElementById("filter-control-button").value = "Add Filters";
+        }
+        /*document.querySelector(".filter-change").addEventListener("input", ()=>{
+            document.querySelector('[type="submit"]').click();
+        }
+        )*/
+    }
+    function clearsearch(){
+        document.querySelector(".filter-change").value=""
+    }
+</script>
+<div class="Home-body container">
+    <form method="post">
+        <br>
+        <div class="row">
+            <div class="col-3">
+                <input class="form-control" type="text" placeholder="Search by text" name="search" value="@Model.filterInfo.searchstring">
+            </div>
+            <div class="col-1">
+                <input type="button" value="clear" onclick="clearsearch()" class="btn btn btn-dark text-white d-inline form-control">
+            </div>
+            <div class="col-1">
+                <input type="submit" class="btn btn-info d-inline form-control" value="Search">
+            </div>
+            <div class="col-1">
+                <input type="button" id="filter-control-button" value="Add Filters" onclick="showFilters()" class="btn btn btn-info d-inline float-end">
+            </div>
+            
+        </div>
+        <div id="filters" class="p-0" style="display:none">
+            <div class="row p-2">
+                <span class=" col-2 col-md-2"><b>Rent Range : </b></span>
+                <input type="number" class="form-control m-1 col-5 col-lg-5 col-md-5 filter-change" placeholder="min" name="minrent" value="@Model.filterInfo.rentmin">
+                <input type="number" class="form-control m-1 col-5 col-md-5 filter-change" placeholder="max" name="maxrent" value="@Model.filterInfo.rentmax">
+                <br><br>
+            </div>
+            <div class="row p-2">
+                <span class=" col-2 col-md-2"><b>Bed&Baths:</b></span>
+                <input type="number" class="form-control m-1 col-5 col-md-5 filter-change" placeholder="beds" name="beds" value="@Model.filterInfo.beds">
+                <input type="number" class="form-control m-1 col-5 col-md-5 filter-change" placeholder="baths" name="baths" value="@Model.filterInfo.baths">
+                <br><br>
+            </div>
+            <div class="row p-2">
+                <span class="col-1"></span>
+                <button class="btn btn-primary col-2 col-md-2">Clear filters</button>
+            </div>
+        </div>
+    </form>
+    <hr>
+    @if (Model.error_message.Length > 0)
+    {
+        <div class="container text-center alert alert-warning alert-dismissible fade show" role="alert">
+            <h4><b>@Model.error_message</b></h4>
+            <button type="button" class="btn btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+        </div>
+    }
+    @if (Model.success_message.Length > 0)
+    {
+        <div class="container text-center alert alert-success alert-dismissible fade show" role="alert">
+            <h4><b>@Model.success_message</b></h4>
+            <button type="button" class="btn btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+        </div>
+    }
+    <div>
+        <div class="row">
+            @foreach (var info in Model.completePropertiesList)
+            {
+                <div class="col p-3 col-lg-4 col-md-6 col-sm-12 p-0">
+                    <div class="card bg-info text-black" style="width: 18rem;">
+                        <div class="container">
+                            <img class="card-img-top" src="@info.img_url" alt="House image is not Available">
+                        </div>
+                        <div class="card-body">
+                            <h4 class="card-title"><strong>@info.property_name</strong></h4>
+                            <h5 class="card-text">
+                                <strong>Rent : @info.rent.</strong></h5>
+                            <h5 class="card-text">
+                                <strong>Address : @info.address   </strong></h5>
+                            <h5 class="card-text">
+                                <strong> @info.beds bed - @info.baths bath</strong></h5>
+                            <a href="#" class="btn btn-primary">Detailed info</a>
+                        </div>
+                    </div>
+                </div>
+            }
+        </div>
+    </div>
+
+
+</div>

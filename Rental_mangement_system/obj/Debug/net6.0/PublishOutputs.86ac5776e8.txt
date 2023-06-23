@@ -1,0 +1,13 @@
+C:\Users\satye\source\repos\Rental_mangement_system\Rental_mangement_system\bin\Debug\net6.0\publish\Rental_mangement_system.exe
+C:\Users\satye\source\repos\Rental_mangement_system\Rental_mangement_system\bin\Debug\net6.0\publish\appsettings.Development.json
+C:\Users\satye\source\repos\Rental_mangement_system\Rental_mangement_system\bin\Debug\net6.0\publish\appsettings.json
+C:\Users\satye\source\repos\Rental_mangement_system\Rental_mangement_system\bin\Debug\net6.0\publish\Rental_mangement_system.dll
+C:\Users\satye\source\repos\Rental_mangement_system\Rental_mangement_system\bin\Debug\net6.0\publish\Rental_mangement_system.deps.json
+C:\Users\satye\source\repos\Rental_mangement_system\Rental_mangement_system\bin\Debug\net6.0\publish\Rental_mangement_system.runtimeconfig.json
+C:\Users\satye\source\repos\Rental_mangement_system\Rental_mangement_system\bin\Debug\net6.0\publish\Rental_mangement_system.pdb
+C:\Users\satye\source\repos\Rental_mangement_system\Rental_mangement_system\bin\Debug\net6.0\publish\System.Data.SqlClient.dll
+C:\Users\satye\source\repos\Rental_mangement_system\Rental_mangement_system\bin\Debug\net6.0\publish\runtimes\win-arm64\native\sni.dll
+C:\Users\satye\source\repos\Rental_mangement_system\Rental_mangement_system\bin\Debug\net6.0\publish\runtimes\win-x64\native\sni.dll
+C:\Users\satye\source\repos\Rental_mangement_system\Rental_mangement_system\bin\Debug\net6.0\publish\runtimes\win-x86\native\sni.dll
+C:\Users\satye\source\repos\Rental_mangement_system\Rental_mangement_system\bin\Debug\net6.0\publish\runtimes\unix\lib\netcoreapp2.1\System.Data.SqlClient.dll
+C:\Users\satye\source\repos\Rental_mangement_system\Rental_mangement_system\bin\Debug\net6.0\publish\runtimes\win\lib\netcoreapp2.1\System.Data.SqlClient.dll

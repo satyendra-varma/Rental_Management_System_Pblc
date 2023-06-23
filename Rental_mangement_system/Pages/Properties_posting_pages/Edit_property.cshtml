@@ -1,0 +1,80 @@
+﻿@page
+@model Rental_mangement_system.Pages.Properties_posting_pages.Edit_propertyModel
+@{
+}
+
+<div class="container">
+    <div class="container">
+        <br><br>
+        <h1>Edit Property</h1>
+        <br><br>
+    </div>
+    <form method="POST">
+        <input type="hidden" name="property_id" value="@Model.propertyInfo.property_id">
+        <div class="row">
+            <label class="col-form-label col-md-2 col-3">Property Name</label>
+            <div class="col col-md-4 col-9">
+                <input type="text" class="form-control" name="property-name" value="@Model.propertyInfo.property_name">
+            </div>
+            <br><br>
+            <label class="col-form-label col-md-2 col-3">Rent</label>
+            <div class="col col-md-4 col-9">
+                <input type="number" class="form-control" name="rent" maxlength="10" value="@Model.propertyInfo.rent">
+            </div>
+            <br><br>
+            <label class="col-form-label col-md-2 col-3">Description</label>
+            <div class="col col-md-4 col-9">
+                <textarea name="description" class="form-control" cols="25" rows="3" value="@Model.propertyInfo.description">@Model.propertyInfo.description</textarea>
+            </div>
+            <br><br><br><br>
+            <label class="col-form-label col-md-2 col-3">Address</label>
+            <div class="col col-md-4 col-9">
+                <textarea name="address" class="form-control" cols="25" rows="2" value="@Model.propertyInfo.address">@Model.propertyInfo.address</textarea>
+            </div>
+            <br><br><br>
+            <label class="col-form-label col-md-2 col-3">Available from</label>
+            <div class="col col-md-4 col-9">
+                <input type="date" class="form-control" name="start_date" value="@Model.propertyInfo.start_date.Substring(0, 10)">
+            </div>
+            <br><br>
+            <label class="col-form-label col-md-2 col-3">Phone no.</label>
+            <div class="col col-md-4 col-9">
+                <input type="text" class="form-control" name="phone_no." maxlength="12" value="@Model.propertyInfo.phone">
+            </div>
+            <br><br>
+        </div>
+        <div class="row">
+            <label class="col-form-label col-md-2 col-3">Beds & Bath</label>
+            <div class="col col-md-2 col-4">
+                <input type="number" class="form-control" name="beds" value="@Model.propertyInfo.beds">
+            </div>
+            <div class="col col-md-2 col-4 offset-1 offset-md-0">
+                <input type="number" class="form-control" name="baths" value="@Model.propertyInfo.baths">
+            </div>
+        </div>
+        <br>
+        @if (Model.error_message.Length > 0)
+        {
+            <div class="container text-center alert alert-warning alert-dismissible fade show" role="alert">
+                <h4><b>@Model.error_message</b></h4>
+                <button type="button" class="btn btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+            </div>
+        }
+        @if (Model.success_message.Length > 0)
+        {
+            <div class="container text-center alert alert-success alert-dismissible fade show" role="alert">
+                <h4><b>@Model.success_message</b></h4>
+                <button type="button" class="btn btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+            </div>
+        }
+        <div class="row">
+            <div class="col-3 offset-2">
+                <input type="submit" class="btn btn-outline-primary">
+            </div>
+            <div class="col-3 offset-2">
+                <a class="btn btn-outline-dark" href="/Properties_posting_pages/Add_house"> Cancel </a>
+            </div>
+        </div>
+    </form>
+    <br><br><br>
+</div>

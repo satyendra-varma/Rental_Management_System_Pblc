@@ -1,0 +1,39 @@
+body[b-vzopr5bv7c] {
+    background-color:lightgreen;
+}
+div.signup-body[b-vzopr5bv7c] {
+    padding: 3%;
+    width: 100%;
+    height: 100%;
+    background-color: #eed;
+}
+div.signup-body div[b-vzopr5bv7c] {
+    margin: auto;
+    border: 5px;
+    width: 100%;
+    padding:20px;
+    max-width: 600px;
+    box-shadow: 2px 2px 5px 5px #808080;
+    background-color: #a6a6a6;
+    border-radius:5%;
+}
+div.signup-body div div[b-vzopr5bv7c]{
+    box-shadow:none;
+}
+div.signup-body div div p[b-vzopr5bv7c], a[b-vzopr5bv7c] {
+    display: inline;
+    color:white;
+}
+label[b-vzopr5bv7c]{
+    text-align:left;
+}
+div.signup-body div div a:hover[b-vzopr5bv7c]{
+    color:black;
+}
+
+@media (min-width: 720px) {
+
+    div.signup-body div[b-vzopr5bv7c] {
+        width: 50%;
+    }
+}

@@ -1,0 +1,62 @@
+﻿@page
+@model Rental_mangement_system.Pages.Add_houseModel
+@{
+}
+<div class="Add_house-body">
+    <div class="top-bar">
+        <h1>Properties posted</h1>
+        <a class="btn btn-primary text-white" href="/Properties_posting_pages/Create_new_property">Post new property</a>
+    </div>
+    <div>
+        @if (LoginModel.loggedin == true)
+        {
+            <table class=" table table-secondary">
+                <thead>
+                    <tr>
+                        <th>Property name</th>
+                        <th>rent</th>
+                        <th>Phone no.</th>
+                        <th>Address</th>
+                        <th>Posted on</th>
+                        <th>Image</th>
+                        <th>edit</th>
+                        <th>delete</th>
+
+                    </tr>
+                </thead>
+                <tbody>
+                    @foreach (var info in Model.propertiesList)
+                    {
+                        <tr>
+                            <td>@info.property_name</td>
+                            <td>@info.rent</td>
+                            <td>@info.phone</td>
+                            <td>@info.address</td>
+                            <td>@info.time_created</td>
+                            <td>
+                                <div>
+                                    <img src="@info.img_url" alt="Property Image is not available" height="50" width="50">
+                                </div>
+                            </td>
+                            <td><a class="btn btn-primary" href="/Properties_posting_pages/Edit_property?property_id=@info.property_id">Edit</a></td>
+                            <td><a class="btn btn-primary" href="/Properties_posting_pages/Delete_property?property_id=@info.property_id">Delete</a></td>
+                        </tr>
+                    }
+
+                </tbody>
+            </table>
+            <br>
+        }
+        @if (LoginModel.loggedin == false)
+        {
+            <div class="row container text-center">
+                <h3>Please Log-in to display your houses</h3>
+            </div>
+            <div class="row container">
+                <div class="col-1 offset-6">
+                    <a href="/Login" class="btn btn-primary">Login</a>
+                </div>
+            </div>
+        }
+    </div>
+</div>

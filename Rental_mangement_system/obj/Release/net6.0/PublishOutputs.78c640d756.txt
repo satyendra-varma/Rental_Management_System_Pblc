@@ -1,0 +1,15 @@
+C:\Users\satye\source\repos\Rental_mangement_system\Rental_mangement_system\obj\Release\net6.0\PubTmp\Out\Rental_mangement_system.exe
+C:\Users\satye\source\repos\Rental_mangement_system\Rental_mangement_system\obj\Release\net6.0\PubTmp\Out\appsettings.Development.json
+C:\Users\satye\source\repos\Rental_mangement_system\Rental_mangement_system\obj\Release\net6.0\PubTmp\Out\appsettings.json
+C:\Users\satye\source\repos\Rental_mangement_system\Rental_mangement_system\obj\Release\net6.0\PubTmp\Out\Rental_mangement_system.dll
+C:\Users\satye\source\repos\Rental_mangement_system\Rental_mangement_system\obj\Release\net6.0\PubTmp\Out\Rental_mangement_system.deps.json
+C:\Users\satye\source\repos\Rental_mangement_system\Rental_mangement_system\obj\Release\net6.0\PubTmp\Out\Rental_mangement_system.runtimeconfig.json
+C:\Users\satye\source\repos\Rental_mangement_system\Rental_mangement_system\obj\Release\net6.0\PubTmp\Out\Rental_mangement_system.pdb
+C:\Users\satye\source\repos\Rental_mangement_system\Rental_mangement_system\obj\Release\net6.0\PubTmp\Out\AWSSDK.Core.dll
+C:\Users\satye\source\repos\Rental_mangement_system\Rental_mangement_system\obj\Release\net6.0\PubTmp\Out\AWSSDK.S3.dll
+C:\Users\satye\source\repos\Rental_mangement_system\Rental_mangement_system\obj\Release\net6.0\PubTmp\Out\System.Data.SqlClient.dll
+C:\Users\satye\source\repos\Rental_mangement_system\Rental_mangement_system\obj\Release\net6.0\PubTmp\Out\runtimes\win-arm64\native\sni.dll
+C:\Users\satye\source\repos\Rental_mangement_system\Rental_mangement_system\obj\Release\net6.0\PubTmp\Out\runtimes\win-x64\native\sni.dll
+C:\Users\satye\source\repos\Rental_mangement_system\Rental_mangement_system\obj\Release\net6.0\PubTmp\Out\runtimes\win-x86\native\sni.dll
+C:\Users\satye\source\repos\Rental_mangement_system\Rental_mangement_system\obj\Release\net6.0\PubTmp\Out\runtimes\unix\lib\netcoreapp2.1\System.Data.SqlClient.dll
+C:\Users\satye\source\repos\Rental_mangement_system\Rental_mangement_system\obj\Release\net6.0\PubTmp\Out\runtimes\win\lib\netcoreapp2.1\System.Data.SqlClient.dll

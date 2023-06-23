@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="..\build\Rental_mangement_system.props" />
+</Project>

@@ -1,0 +1,45 @@
+﻿@page
+@model Rental_mangement_system.Pages.SignupModel
+@{
+}
+<div class="signup-body">
+    <div class="text-white">
+        <br>
+        <h2 class="text-center"><b>Enter your details to Sign-up</b></h2><br>
+        <form method="post">
+            <label for="name">Full Name : </label><br>
+            <input type="text" class="form-control" name="name"><br><br>
+            <label for="email-id">Email Id : </label><br>
+            <input type="text" class="form-control" name="email"><br><br>
+            <label for="password">Password : </label><br>
+            <input type="password" class="form-control" name="password"><br><br>
+            <label for="phone">Contact-no. : </label><br>
+            <input type="number" class="form-control"  name="phone"><br><br>
+
+            @if (Model.error_message.Length > 0)
+            {
+                <div class="container text-center alert alert-warning alert-dismissible fade show" role="alert">
+                    <h4><b>@Model.error_message</b></h4>
+                    <button type="button" class="btn btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+                </div>
+            }
+            @if (Model.success_message.Length > 0)
+            {
+                <div class="container text-center alert alert-success alert-dismissible fade show" role="alert">
+                    <h4><b>@Model.success_message</b></h4>
+                    <button type="button" class="btn btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+                </div>
+            }
+
+            <div class="text-center">
+                <input type="submit" class="btn btn-secondary" value="Submit">
+            </div>
+        </form>
+        <br>
+        <div class=" text-center">
+            <p>Already a member : </p>
+            <a class="text-decoration-none" href="\#">Login</a>
+        </div>
+        <br><br>
+    </div><br>
+</div>

@@ -1,0 +1,156 @@
+/* _content/Rental_mangement_system/Pages/Index.cshtml.rz.scp.css */
+body[b-5vyv8w437b] {
+}
+
+/* _content/Rental_mangement_system/Pages/Login.cshtml.rz.scp.css */
+
+div.Login-body[b-p1myhoq12d] {
+    padding-top: 30px;
+    width: 100%;
+    height: 100%;
+    background-color: lightcyan;
+}
+div.Login-body div[b-p1myhoq12d] {
+    margin:auto;
+    border: 5px;
+    width:75%;
+    padding:30px;
+    max-width:400px;
+    box-shadow: 2px 2px 10px 5px #808080;
+    background-color: lightblue;
+
+}
+div.Login-body div form input[b-p1myhoq12d]{
+    border-color:gray;
+    border-radius:5px;
+}
+input[type=submit][b-p1myhoq12d] {
+    background-color: #8ac7db;
+}
+input[type=submit]:hover[b-p1myhoq12d] {
+    background-color: #3ca1c3;
+}
+div div a[b-p1myhoq12d] {
+    color:white;
+}
+
+@media (min-width: 768px) {
+    div.Login-body div[b-p1myhoq12d] {
+        margin: auto;
+        padding: 20px;
+        width:50%;
+    }
+
+}
+/* _content/Rental_mangement_system/Pages/Properties_posting_pages/Add_house.cshtml.rz.scp.css */
+body[b-c7vefkhiwd] {
+}
+
+div.Add_house-body div.top-bar[b-c7vefkhiwd]{
+    display:block;
+    padding:2% 5%;
+    box-shadow:0.5px 0.5px 10px black;
+
+}
+div.Add_house-body div.top-bar h1[b-c7vefkhiwd], a[b-c7vefkhiwd] {
+    display: inline-block;
+}
+div.Add_house-body div.top-bar a[b-c7vefkhiwd]{
+    float: right;
+    margin-top: 1%;
+}
+h3[b-c7vefkhiwd]{
+    margin-top:10px;
+}
+div.Add_house-body div.top-bar[b-c7vefkhiwd]{
+    background-color:antiquewhite;
+}
+/* _content/Rental_mangement_system/Pages/Shared/_Layout.cshtml.rz.scp.css */
+/* Please see documentation at https://docs.microsoft.com/aspnet/core/client-side/bundling-and-minification
+for details on configuring this project to bundle and minify static web assets. */
+
+a.navbar-brand[b-zp640y05mk] {
+  white-space: normal;
+  text-align: center;
+  word-break: break-all;
+}
+
+a[b-zp640y05mk] {
+  color: #0077cc;
+}
+
+.btn-primary[b-zp640y05mk] {
+  color: #fff;
+  background-color: #1b6ec2;
+  border-color: #1861ac;
+}
+
+.nav-pills .nav-link.active[b-zp640y05mk], .nav-pills .show > .nav-link[b-zp640y05mk] {
+  color: #fff;
+  background-color: #1b6ec2;
+  border-color: #1861ac;
+}
+
+.border-top[b-zp640y05mk] {
+  border-top: 1px solid #e5e5e5;
+}
+.border-bottom[b-zp640y05mk] {
+  border-bottom: 1px solid #e5e5e5;
+}
+
+.box-shadow[b-zp640y05mk] {
+  box-shadow: 0 .25rem .75rem rgba(0, 0, 0, .05);
+}
+
+button.accept-policy[b-zp640y05mk] {
+  font-size: 1rem;
+  line-height: inherit;
+}
+
+.footer[b-zp640y05mk] {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  white-space: nowrap;
+  line-height: 60px;
+}
+/* _content/Rental_mangement_system/Pages/Signup.cshtml.rz.scp.css */
+body[b-vzopr5bv7c] {
+    background-color:lightgreen;
+}
+div.signup-body[b-vzopr5bv7c] {
+    padding: 3%;
+    width: 100%;
+    height: 100%;
+    background-color: #eed;
+}
+div.signup-body div[b-vzopr5bv7c] {
+    margin: auto;
+    border: 5px;
+    width: 100%;
+    padding:20px;
+    max-width: 600px;
+    box-shadow: 2px 2px 5px 5px #808080;
+    background-color: #a6a6a6;
+    border-radius:5%;
+}
+div.signup-body div div[b-vzopr5bv7c]{
+    box-shadow:none;
+}
+div.signup-body div div p[b-vzopr5bv7c], a[b-vzopr5bv7c] {
+    display: inline;
+    color:white;
+}
+label[b-vzopr5bv7c]{
+    text-align:left;
+}
+div.signup-body div div a:hover[b-vzopr5bv7c]{
+    color:black;
+}
+
+@media (min-width: 720px) {
+
+    div.signup-body div[b-vzopr5bv7c] {
+        width: 50%;
+    }
+}
